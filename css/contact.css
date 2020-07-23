@@ -3,15 +3,15 @@
 @import "common.css";
 
 ::placeholder { color: silver; }
-#contact_page { padding:217px 0 100px }
+#contact_page { padding:235px 0 100px }
 #contact_page h2 { 
-    font-size: 38px;
+    font-size: 38px; color: #222;
     text-align: center; 
     padding-bottom: 50px; }
-.nocontact_box { width: 46%; margin: 0 auto; }
+.nocontact_box { width: 45%; margin: 0 auto; }
 
 .contact_form ul li { padding-bottom: 15px; }
-.contact_form label { display: block; }
+.contact_form label { display: block; width: 100px;}
 .contact_form .tit_lbl { 
     font-size: 14px; color: #333;
     font-weight: 700;
@@ -19,6 +19,7 @@
     line-height: 1.5; }
 .contact_form .info_content input[type=text],
 .contact_form .info_content select { 
+    width: 100%;
     height: 54px;
     border: none;
     padding:16px;
@@ -26,7 +27,19 @@
     background: #f8f9fa;
     vertical-align: top; 
 }
-.w555 { width: 555px; height: 54px; }
+.contact_form .info_content select { 
+    /* select 박스 끝에 화살표 감춤(IE에서는 사용 불가) */
+    -webkit-appearance:none; 
+    -moz-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background: #f8f9fa url(../images/select_arrow_down.png) no-repeat 97% center;
+    
+}
+select::-ms-expand { 
+    /* IE10 이상 가능 */
+    display: none }
+
 
 .contact_form .info_content textarea { 
         height: 120px; width: 100%;
