@@ -36,7 +36,13 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     font-family:'나눔고딕';
     color:rgba(0,0,0,0.6);
     padding:9px 0
-}  
+}
+.topmenu .search_box { position: absolute; top: 3px; left: 0; }
+.topmenu .search_box fieldset { 
+    border: 1px solid #ccc;
+    padding-right: 5px; border-radius: 2px; }
+.topmenu .search_box input { border: none; padding: 4px 0.5em; }
+
 .topmenu a { padding:0px 11px; position:relative; }    
 .topmenu a:before { 
     content:''; 
