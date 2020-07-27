@@ -35,11 +35,13 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     padding:9px 0;
     position: relative;
 }
-.topmenu .search_box { position: absolute; top: 3px; left: 0; }
+.topmenu .search_box { position: absolute; top: 0; left: 0; }
 .topmenu .search_box fieldset { 
     border: 1px solid #ccc;
     padding-right: 5px; border-radius: 2px; }
 .topmenu .search_box input { border: none; padding: 4px 0.5em; }
+
+
 .topmenu a { padding:0px 11px; position:relative; }    
 .topmenu a:before { 
     content:''; 
@@ -51,7 +53,10 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     top:50%; 
     transform:translateY(-50%); 
 } 
-.topmenu a:first-child:before { display:none }       
+/* 이름이 다른 형제가 존재하면 -child 대신에  
+   -of-type 선택자를 써야 함
+*/
+.topmenu a:first-of-type:before { display:none }       
 .topmenu a:hover { color:rgba(0,0,0,0.8) }    
 
 
