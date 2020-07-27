@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
     padding:9px 0;
     position: relative;
 }
-.topmenu .search_box { position: absolute; top: 0; left: 0; }
+.topmenu .search_box { position: absolute; top:3px; left: 0; }
 .topmenu .search_box fieldset { 
     border: 1px solid #ccc;
     padding-right: 5px; border-radius: 2px; }
@@ -62,6 +62,8 @@ h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
 
 .h1NavWrap { border-top:1px solid #dedede }
 .h1Nav { position:relative; height:103px }
+.h1Nav .open_nav { display: none; }
+.h1Nav .close_nav { display: none; }
 .h1Nav h1 { 
     font-size:30px; 
     color:#000; 
