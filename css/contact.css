@@ -8,7 +8,7 @@
     font-size: 38px; color: #222;
     text-align: center; 
     padding-bottom: 50px; }
-.nocontact_box { width: 45%; margin: 0 auto; }
+.nocontact_box { width: 56%; margin: 0 auto; }
 
 .contact_form ul li { padding-bottom: 15px; }
 .contact_form label { display: block; width: 100px;}
@@ -50,9 +50,8 @@ select::-ms-expand {
         resize: none; }
 .contact_form .btn { margin-top:60px; text-align:center;}    
 .contact_form .btn input { 
-    width:273px; height:58px; 
+    width:272.5px; height:58px; 
     background:#adb5bd; color:#fff; 
     border:none; border-radius:5px; 
-    font-size:18px; 
-}
+    font-size:18px; margin:0 5px; }
 .contact_form .btn input[type=submit] { background:#3e78ff }
